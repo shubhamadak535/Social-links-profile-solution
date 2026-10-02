@@ -54,12 +54,13 @@ main {
 .profile-pic {
     border-radius: 50%;
     max-width: 8rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
 }
 
 .username {
     font-size: var(--font-size-lg);
     color: var(--white);
+    font-weight: var(--font-wt-med);
     margin-bottom: 1rem;
 }
 
