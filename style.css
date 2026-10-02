@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./assets/fonts/Inter-VariableFont_slnt\,wght.ttf");
+}
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+
+    --font-family: "Inter", sans-serif;
+    --font-size-sm: 1.2rem;
+    --font-size-med: 1.4rem;
+    --font-size-lg: 2.4rem;
+    --font-wt-normal: 400;
+    --font-wt-med: 600;
+    --font-wt-bold: 700;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--grey900);
+    line-height: 1.2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: var(--grey800);
+    max-width: 38rem;
+    width: 90%;
+    padding: 4rem;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 8rem;
+    margin-bottom: 2.5rem;
+}
+
+.username {
+    font-size: var(--font-size-lg);
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.address {
+    font-size: var(--font-size-med);
+    font-weight: var(--font-wt-med);
+    color: var(--green);
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+.description {
+    font-size: var(--font-size-med);
+    color: var(--white);
+    margin-bottom: 2.5rem;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: var(--font-size-med);
+    font-weight: var(--font-wt-med);
+    display: inline-block;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.btn:link, .btn:visited {
+    color: var(--white);
+    background-color: var(--grey700);
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    color: var(--grey900);
+    background-color: var(--green);
+}
+
+@media (max-width: 27rem) {
+    html {
+        font-size: 55%;
+    }
+
+    .card {
+        padding: 3rem;
+    }
+}
